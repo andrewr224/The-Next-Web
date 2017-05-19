@@ -1,0 +1,105 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.categories {
+  background: #6f1877;
+  height: 30px;
+  width: 100%; }
+
+nav {
+  background: #1e8125;
+  position: fixed;
+  left: 0;
+  right: 0;
+  height: 50px; }
+
+header {
+  background: #9db864;
+  width: 100%; }
+  header::before, header::after {
+    content: "";
+    display: table; }
+  header::after {
+    clear: both; }
+  header {
+    zoom: 1;
+    /* For IE 6/7 (trigger hasLayout) */ }
+  header .main-news {
+    float: left;
+    background: #89f7cf;
+    width: 65%;
+    height: 500px; }
+  header aside {
+    float: left;
+    height: 500px;
+    width: 35%;
+    background: #ad2422; }
+
+section {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto; }
+  section::before, section::after {
+    content: "";
+    display: table; }
+  section::after {
+    clear: both; }
+  section {
+    zoom: 1;
+    /* For IE 6/7 (trigger hasLayout) */ }
+  section article {
+    float: left;
+    width: 25%;
+    height: 260px;
+    background: #bbab1c; }

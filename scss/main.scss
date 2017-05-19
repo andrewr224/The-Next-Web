@@ -1,0 +1,48 @@
+@import "reset";
+@import "mixins";
+
+
+.categories{
+  background: rgb(111, 24, 119);
+  height: 30px;
+  width: 100%;
+}
+
+nav{
+  background: rgb(30, 129, 37);
+  position: fixed;
+  left: 0;
+  right: 0;
+  height: 50px;
+}
+
+header{
+  @include clearfix;
+  background: rgb(157, 184, 100);
+  width: 100%;
+  .main-news{
+    float: left;
+    background: rgb(137, 247, 207);
+    width: 65%;
+    height: 500px;
+  }
+  aside{
+    float: left;
+    height: 500px;
+    width: 35%;
+    background: rgb(173, 36, 34);
+  }
+}
+
+section{
+  @include clearfix;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  article {
+    float: left;
+    width: 25%;
+    height: 260px;
+    background: rgb(187, 171, 28);
+  }
+}
