@@ -52,6 +52,9 @@ table {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
+body {
+  font-size: 140%; }
+
 .categories {
   background: #6f1877;
   height: 30px;
@@ -60,9 +63,13 @@ table {
 nav {
   background: #1e8125;
   position: fixed;
+  top: 0;
   left: 0;
   right: 0;
   height: 50px; }
+
+.categories {
+  margin-top: 50px; }
 
 header {
   background: #9db864;
@@ -82,12 +89,13 @@ header {
     height: 500px; }
   header aside {
     float: left;
-    height: 500px;
     width: 35%;
     background: #ad2422; }
+    header aside article {
+      height: 250px; }
 
 section {
-  max-width: 1200px;
+  max-width: 1160px;
   margin-left: auto;
   margin-right: auto; }
   section::before, section::after {
@@ -103,3 +111,30 @@ section {
     width: 25%;
     height: 260px;
     background: #bbab1c; }
+
+.more-news article {
+  float: left;
+  width: 33.33%;
+  height: 260px;
+  background: rgba(165, 28, 187, 0.42); }
+
+footer .quote {
+  text-align: center;
+  height: 200px;
+  background: #e6b6a2; }
+
+footer section div {
+  float: left; }
+
+footer .footer-links {
+  width: 33.33%; }
+
+footer .social {
+  text-align: center;
+  width: 100%;
+  margin-top: 40px; }
+
+footer .copy {
+  text-align: center;
+  height: 100px;
+  background: #5b011e; }
