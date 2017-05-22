@@ -11,6 +11,10 @@ body{
   background: rgb(111, 24, 119);
   height: 30px;
   width: 100%;
+  @include mQ(768px){
+    position: fixed;
+    width: 105px;
+  }
 }
 
 nav{
@@ -35,6 +39,10 @@ header{
     background: rgb(137, 247, 207);
     width: 65%;
     height: 500px;
+    @include mQ(768px){
+      width: 100%;
+      float: none;
+    }
   }
   aside{
     float: left;
@@ -42,6 +50,10 @@ header{
     background: rgb(173, 36, 34);
     article{
       height: 250px;
+    }
+    @include mQ(768px){
+      width: 100%;
+      float: none;
     }
   }
 }
@@ -58,6 +70,18 @@ section{
     width: 25%;
     height: 260px;
     background: rgb(187, 171, 28);
+    @include mQ(1024px){
+      width: 33.33%;
+    }
+    @include mQ(768px){
+      width: 100%;
+      float: none;
+    }
+  }
+}
+.funding article:last-child{
+  @include mQ(1024px){
+    display: none;
   }
 }
 
@@ -67,6 +91,13 @@ section{
     width: 33.33%;
     height: 260px;
     background: rgba(165, 28, 187, 0.42);
+    @include mQ(1024px){
+      width: 50%;
+    }
+    @include mQ(768px){
+      width: 100%;
+      float: none;
+    }
   }
 }
 
@@ -76,6 +107,9 @@ footer{
     text-align: center;
     height: 200px;
     background: rgb(230, 182, 162);
+    @include mQ(1024px){
+      display: none;
+    }
   }
   section{
     div{
@@ -84,6 +118,7 @@ footer{
   }
   .footer-links{
     width: 33.33%;
+    min-width: 210px;
   }
   .social{
     text-align: center;

@@ -59,6 +59,10 @@ body {
   background: #6f1877;
   height: 30px;
   width: 100%; }
+  @media screen and (max-width: 768px) {
+    .categories {
+      position: fixed;
+      width: 105px; } }
 
 nav {
   background: #1e8125;
@@ -87,12 +91,20 @@ header {
     background: #89f7cf;
     width: 65%;
     height: 500px; }
+    @media screen and (max-width: 768px) {
+      header .main-news {
+        width: 100%;
+        float: none; } }
   header aside {
     float: left;
     width: 35%;
     background: #ad2422; }
     header aside article {
       height: 250px; }
+    @media screen and (max-width: 768px) {
+      header aside {
+        width: 100%;
+        float: none; } }
 
 section {
   max-width: 1160px;
@@ -111,23 +123,45 @@ section {
     width: 25%;
     height: 260px;
     background: #bbab1c; }
+    @media screen and (max-width: 1024px) {
+      section article {
+        width: 33.33%; } }
+    @media screen and (max-width: 768px) {
+      section article {
+        width: 100%;
+        float: none; } }
+
+@media screen and (max-width: 1024px) {
+  .funding article:last-child {
+    display: none; } }
 
 .more-news article {
   float: left;
   width: 33.33%;
   height: 260px;
   background: rgba(165, 28, 187, 0.42); }
+  @media screen and (max-width: 1024px) {
+    .more-news article {
+      width: 50%; } }
+  @media screen and (max-width: 768px) {
+    .more-news article {
+      width: 100%;
+      float: none; } }
 
 footer .quote {
   text-align: center;
   height: 200px;
   background: #e6b6a2; }
+  @media screen and (max-width: 1024px) {
+    footer .quote {
+      display: none; } }
 
 footer section div {
   float: left; }
 
 footer .footer-links {
-  width: 33.33%; }
+  width: 33.33%;
+  min-width: 210px; }
 
 footer .social {
   text-align: center;
