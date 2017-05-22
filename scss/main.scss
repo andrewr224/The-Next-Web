@@ -1,16 +1,36 @@
 @import "reset";
+@import "variables";
 @import "mixins";
-
-body{
-  font-size: 140%;
-}
+@import "typography";
+@import "icons";
 
 // Heading
 
 .categories{
-  background: rgb(111, 24, 119);
+  @include clearfix;
+  background: rgb(0, 0, 0);
   height: 30px;
   width: 100%;
+  font-size: 13px;
+  font-weight: bold;
+  overflow: hidden;
+  ul{
+    margin-left: 20px;
+  }
+  li{
+    float: left;
+    margin-right: 10px;
+  }
+  .right{
+    float: right;
+  }
+  a{
+    color: $color-main;
+    line-height: 30px;
+    &:hover{
+      color: white;
+    }
+  }
   @include mQ(768px){
     position: fixed;
     width: 105px;
@@ -18,12 +38,28 @@ body{
 }
 
 nav{
-  background: rgb(30, 129, 37);
+  @include clearfix;
+  background: white;
+  font-size: 18px;
+  text-transform: uppercase;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   height: 50px;
+  ul{
+    margin-left: 20px;
+  }
+  li{
+    float: right;
+  }
+  li:first-child{
+    float: left;
+  }
+  a{
+    color: $color-main;
+    line-height: 50px;
+  }
 }
 
 .categories{

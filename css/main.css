@@ -2,6 +2,8 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,700");
+@import url("https://fonts.googleapis.com/css?family=Ropa+Sans");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -53,24 +55,97 @@ table {
   box-sizing: border-box; }
 
 body {
-  font-size: 140%; }
+  font-family: 'Quicksand', Helvetica, Arial, sans-serif; }
+
+h4 {
+  font-family: 'Ropa Sans', sans-serif; }
+
+a {
+  text-decoration: none; }
+
+.icon, .icon-fb, .icon-tweet, .icon-mail, .icon-more, .icon-search {
+  background-color: transparent;
+  background-image: url(imgs/icons-sprite.svg);
+  background-size: 1248px 1248px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  vertical-align: middle; }
+
+.icon-fb {
+  background-position: -15px -15px; }
+
+.icon-tweet {
+  background-position: -5px -5px; }
+
+.icon-mail {
+  background-position: -5px -5px; }
+
+.icon-more {
+  background-position: -5px -5px; }
+
+.icon-search {
+  background-position: -5px -5px; }
 
 .categories {
-  background: #6f1877;
+  background: black;
   height: 30px;
-  width: 100%; }
+  width: 100%;
+  font-size: 13px;
+  font-weight: bold;
+  overflow: hidden; }
+  .categories::before, .categories::after {
+    content: "";
+    display: table; }
+  .categories::after {
+    clear: both; }
+  .categories {
+    zoom: 1;
+    /* For IE 6/7 (trigger hasLayout) */ }
+  .categories ul {
+    margin-left: 20px; }
+  .categories li {
+    float: left;
+    margin-right: 10px; }
+  .categories .right {
+    float: right; }
+  .categories a {
+    color: #999;
+    line-height: 30px; }
+    .categories a:hover {
+      color: white; }
   @media screen and (max-width: 768px) {
     .categories {
       position: fixed;
       width: 105px; } }
 
 nav {
-  background: #1e8125;
+  background: white;
+  font-size: 18px;
+  text-transform: uppercase;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   height: 50px; }
+  nav::before, nav::after {
+    content: "";
+    display: table; }
+  nav::after {
+    clear: both; }
+  nav {
+    zoom: 1;
+    /* For IE 6/7 (trigger hasLayout) */ }
+  nav ul {
+    margin-left: 20px; }
+  nav li {
+    float: right; }
+  nav li:first-child {
+    float: left; }
+  nav a {
+    color: #999;
+    line-height: 50px; }
 
 .categories {
   margin-top: 50px; }
