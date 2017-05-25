@@ -43,10 +43,12 @@ nav{
   font-size: 18px;
   text-transform: uppercase;
   position: fixed;
+  z-index: 999;
   top: 0;
   left: 0;
   right: 0;
   height: 50px;
+  box-shadow: 0 0 20px rgba(#aaa7a7, 0.6);
   ul{
     margin-left: 20px;
   }
@@ -68,13 +70,36 @@ nav{
 
 header{
   @include clearfix;
-  background: rgb(157, 184, 100);
   width: 100%;
   .main-news{
     float: left;
-    background: rgb(137, 247, 207);
     width: 65%;
     height: 500px;
+    .container{
+      background-image: url(/imgs/europe.png);
+      background-size: cover;
+      padding: 15px;
+      height: 490px;
+      position: relative;
+    }
+    span{
+      display: block;
+      width: 100%;
+      text-align: right;
+      color: white;
+      font-size: 13px;
+
+    }
+    .hero{
+
+      position: absolute;
+      bottom: 0;
+    }
+    h1{
+      font-size: 44px;
+      margin-bottom: 20px;
+    }
+
     @include mQ(768px){
       width: 100%;
       float: none;
@@ -91,6 +116,16 @@ header{
       width: 100%;
       float: none;
     }
+  }
+  article{
+    padding: 7px;
+  }
+  p{
+    color: #999;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 15px;
   }
 }
 

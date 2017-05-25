@@ -57,6 +57,17 @@ table {
 body {
   font-family: 'Quicksand', Helvetica, Arial, sans-serif; }
 
+h1 {
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  font-family: Helvetica, Arial, sans-serif; }
+
+h2 {
+  color: white;
+  font-family: 'Ropa Sans', sans-serif;
+  text-transform: uppercase; }
+
 h4 {
   font-family: 'Ropa Sans', sans-serif; }
 
@@ -125,10 +136,12 @@ nav {
   font-size: 18px;
   text-transform: uppercase;
   position: fixed;
+  z-index: 999;
   top: 0;
   left: 0;
   right: 0;
-  height: 50px; }
+  height: 50px;
+  box-shadow: 0 0 20px rgba(170, 167, 167, 0.6); }
   nav::before, nav::after {
     content: "";
     display: table; }
@@ -151,7 +164,6 @@ nav {
   margin-top: 50px; }
 
 header {
-  background: #9db864;
   width: 100%; }
   header::before, header::after {
     content: "";
@@ -163,9 +175,26 @@ header {
     /* For IE 6/7 (trigger hasLayout) */ }
   header .main-news {
     float: left;
-    background: #89f7cf;
     width: 65%;
     height: 500px; }
+    header .main-news .container {
+      background-image: url(/imgs/europe.png);
+      background-size: cover;
+      padding: 15px;
+      height: 490px;
+      position: relative; }
+    header .main-news span {
+      display: block;
+      width: 100%;
+      text-align: right;
+      color: white;
+      font-size: 13px; }
+    header .main-news .hero {
+      position: absolute;
+      bottom: 0; }
+    header .main-news h1 {
+      font-size: 44px;
+      margin-bottom: 20px; }
     @media screen and (max-width: 768px) {
       header .main-news {
         width: 100%;
@@ -180,6 +209,14 @@ header {
       header aside {
         width: 100%;
         float: none; } }
+  header article {
+    padding: 7px; }
+  header p {
+    color: #999;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 15px; }
 
 section {
   max-width: 1160px;
