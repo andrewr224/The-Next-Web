@@ -174,7 +174,7 @@ small {
     small {
       letter-spacing: -0.8px; } }
 
-.icon, .icon-fb, .icon-tweet, .icon-mail, .icon-more, .icon-search, .icon-time, .icon-share {
+.icon, .icon-fb, .icon-tweet, .icon-mail, .icon-more, .icon-search, .icon-time, .icon-share, .icon-tag, .icon-case {
   background-color: transparent;
   background-image: url("/imgs/icons-sprite.svg");
   background-size: 1248px 1248px;
@@ -220,6 +220,12 @@ small {
   -webkit-transform: scale(0.875, 0.875);
   -ms-transform: scale(0.875, 0.875);
   transform: scale(0.875, 0.875); }
+
+.icon-tag {
+  background-position: -928px -928px; }
+
+.icon-case {
+  background-position: -48px -48px; }
 
 .top-bar {
   background: white;
@@ -366,10 +372,50 @@ nav {
       margin-right: 5px; }
       .fund .fund-links a:hover {
         color: black; }
-  .fund .fund-item h5 {
-    background-color: #ff4422;
-    padding-left: 80px;
-    line-height: 40px; }
+  .fund .fund-item {
+    position: relative; }
+    .fund .fund-item h5 {
+      background-color: #ff4422;
+      padding-left: 80px;
+      line-height: 40px; }
+    .fund .fund-item h2 {
+      color: #999;
+      background-color: #ffdbd5;
+      padding-left: 80px;
+      padding-top: 10px;
+      line-height: 40px; }
+      .fund .fund-item h2 b {
+        position: absolute;
+        top: 43px;
+        left: 90px;
+        color: black;
+        font-weight: bold; }
+  .fund img {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 10px;
+    left: 20px; }
+  .fund .fund-tags {
+    font-size: 13px;
+    background-color: #fff9f8;
+    padding: 5px;
+    padding-left: 15px;
+    line-height: 20px; }
+    .fund .fund-tags a {
+      display: block;
+      margin-top: 10px;
+      margin-bottom: 10px; }
+    .fund .fund-tags i {
+      margin-right: 10px; }
+  .fund .fund-details {
+    color: #777;
+    font-size: 12px;
+    line-height: 20px;
+    font-family: Helvetica, Arial, sans-serif;
+    padding: 15px;
+    background-color: #fff9f8;
+    border-top: 1px solid #ffb0a2; }
 
 footer .quote {
   text-align: center;
@@ -393,5 +439,13 @@ footer .social {
 
 footer .copy {
   text-align: center;
-  height: 100px;
-  background: #5b011e; }
+  height: 97px;
+  line-height: 97px;
+  color: #aaa;
+  font-size: 13px;
+  background: black;
+  padding-bottom: 50px; }
+  footer .copy img {
+    height: 9px; }
+  footer .copy .heart {
+    color: red; }

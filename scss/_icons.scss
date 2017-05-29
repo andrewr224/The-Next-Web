@@ -60,3 +60,13 @@
   background-position: -832px -832px;
   transform: scale(.875,.875);
 }
+
+.icon-tag{
+  @extend .icon;
+  background-position: -928px -928px;
+}
+
+.icon-case{
+  @extend .icon;
+  background-position:  -48px -48px;
+}
