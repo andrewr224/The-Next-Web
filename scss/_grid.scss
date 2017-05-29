@@ -1,0 +1,60 @@
+.container-wide{
+  @include clearfix;
+  width: 100%;
+}
+
+.container{
+  @extend .container-wide;
+  max-width: 1200px;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.featured-main{
+  float: left;
+  width: 66.66%;
+  @include mQ(768px){
+    width: 100%;
+    float: none;
+  }
+}
+
+.featured-articles{
+  float: right;
+  width: 33.33%;
+  @include mQ(768px){
+    width: 100%;
+    float: none;
+  }
+}
+
+.news-item{
+  float: left;
+  width: 25%;
+  min-height: 235px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  @include mQ(1024px){
+    width: 33.33%;
+    height: 200px;
+  }
+  @include mQ(768px){
+    width: 100%;
+    float: none;
+  }
+}
+
+.categorie-item{
+  float: left;
+  width: 33.33%;
+  @include mQ(1024px){
+    width: 50%;
+  }
+  @include mQ(768px){
+    width: 100%;
+    float: none;
+  }
+}

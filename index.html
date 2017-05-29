@@ -8,18 +8,18 @@
   </head>
   <body>
 
-    <nav>
+    <div class="top-bar">
       <ul>
-        <li><h4><a href="#">Categories</a></h4></li>
+        <li><a href="#"><h2>Categories</h2></a></li>
         <li><a href="#"><i class="icon-search"></i>Search</a></li>
         <li><a href="#"><i class="icon-more"></i>More</a></li>
         <li><a href="#"><i class="icon-mail"></i>Mail</a></li>
         <li><a href="#"><i class="icon-tweet"></i>Tweet</a></li>
         <li><a href="#"><i class="icon-fb"></i>FB</a></li>
       </ul>
-    </nav>
+    </div>
 
-    <div class="categories">
+    <nav>
       <ul>
         <li><a class="active" href="#">News</a></li>
         <li><a href="#">Conference</a></li>
@@ -35,60 +35,115 @@
         <li class="right"><a href="#">Team</a></li>
         <li class="right"><a href="#">About</a></li>
       </ul>
+    </nav>
 
-    </div>
-
-    <header>
-
-      <article class="main-news">
-        <div class="container">
+    <section class="top-news container-wide">
+      <div class="featured-main">
+        <article class="article-1">
           <span>Wednesday - May 24, 2017</span>
-          <div class="hero">
-            <h2>World</h2>
-            <h1>How Europe’s biggest economy is uniting its tech hubs to dethrone Silicon Valley</h1>
-            <p>by Már Másson Maack <i class="icon-time"></i> 6 hours ago <i class="icon-share"></i> 482</p>
+          <div class="article-content">
+            <a href="#">
+              <h2>World</h2>
+              <h1>How Europe’s biggest economy is uniting its tech hubs to dethrone Silicon Valley</h1>
+            </a>
+            <small>by <a href="#">Már Másson Maack</a> <i class="icon-time"></i> 6 hours ago <i class="icon-share"></i> 482</small>
           </div>
-        </div>
-      </article>
-
-      <aside class="">
-        <article>
-          <h2>Insights</h2>
-          <h1>This ‘parasitic robot’ is a bleak metaphor for our online behavior</h1>
-          <p>by Alejandro Tauber <i class="icon-time"></i> 4 hours ago <i class="icon-share"></i> 195</p>
         </article>
-        <article>
-          <h2>Insights</h2>
-          <h1>Report: DDoS attacks are less common, but they’re bigger</h1>
-          <p>by Matthew Hughes <i class="icon-time"></i> 5 hours ago <i class="icon-share"></i> 213</p>
-        </article>
+      </div>
 
+      <aside class="featured-articles">
+        <article class="article-2">
+          <div class="article-content">
+            <a href="#">
+              <h2>Insights</h2>
+              <h1>This ‘parasitic robot’ is a bleak metaphor for our online behavior</h1>
+            </a>
+            <small>by <a href="#">Alejandro Tauber</a> <i class="icon-time"></i> 4 hours ago <i class="icon-share"></i> 195</small>
+          </div>
+        </article>
+        <article class="article-3">
+          <div class="article-content">
+            <a href="#">
+              <h2>Insights</h2>
+              <h1>Report: DDoS attacks are less common, but they’re bigger</h1>
+            </a>
+            <small>by <a href="#">Matthew Hughes</a> <i class="icon-time"></i> 5 hours ago <i class="icon-share"></i> 213</small>
+          </div>
+        </article>
       </aside>
 
-    </header>
-
-    <section>
-      <h1>Latest News</h1>
-      <article>Apple blames exploding Beats headset on AAA batteries</article>
-      <article>Apple blames exploding Beats headset on AAA batteries</article>
-      <article>Apple blames exploding Beats headset on AAA batteries</article>
-      <article>Apple blames exploding Beats headset on AAA batteries</article>
-      <article>Apple blames exploding Beats headset on AAA batteries</article>
-      <article>Apple blames exploding Beats headset on AAA batteries</article>
-      <article>Apple blames exploding Beats headset on AAA batteries</article>
-      <article>Apple blames exploding Beats headset on AAA batteries</article>
     </section>
 
-    <section>
-      <h1>TNW Conference</h1>
-      <article>How Tumblr reconciles political activism with business</article>
-      <article>How Tumblr reconciles political activism with business</article>
-      <article>How Tumblr reconciles political activism with business</article>
-      <article>How Tumblr reconciles political activism with business</article>
+    <section class="container">
+      <a href="#"><h3>Latest News &gt;</h3></a>
+      <article class="news-item">
+        <a id="smartphone" href="#"></a>
+        <a href="#"><h4>Android co-creator's new 'Essential' smartphone will probably be revealed next week</h4></a>
+        <small><a href="#">Napier Lopez</a> - 10 hours ago</small>
+      </article>
+      <article class="news-item">
+        <img src="imgs/2.jpg" alt="Hacker trolls Zuckerberg">
+        <a href="#"><h4>Hacker trolls Zuckerberg commencement speech by defacing Harvard newspaper</h4></a>
+        <small><a href="#">Rachel Kaser</a> - 12 hours ago</small>
+      </article>
+      <article class="news-item">
+        <img src="imgs/3.jpg" alt="Pokémon">
+        <a href="#"><h4>Magikarp Jump, the latest mobile Pokémon game, is out today</h4></a>
+        <small><a href="#">Rachel Kaser</a> - 13 hours ago</small>
+      </article>
+      <article class="news-item">
+        <img src="imgs/4.jpg" alt="Uber and Lyft">
+        <a href="#"><h4>Uber and Lyft are coming back to Austin</h4></a>
+        <small><a href="#">Rachel Kaser</a> - 15 hours ago</small>
+      </article>
+      <article class="news-item">
+        <img src="imgs/5.jpg" alt="Snapchat">
+        <a href="#"><h4>Snapchat launches a design studio for custom geofilters</h4></a>
+        <small><a href="#">Napier Lopez</a> - 15 hours ago</small>
+      </article>
+      <article class="news-item">
+        <img src="imgs/6.jpg" alt="PR nightmare">
+        <a href="#"><h4>Walkers Crisps Football Promotion turns into a PR nightmare on Twitter</h4></a>
+        <small><a href="#">Matthew Hughes</a> - 16 hours ago</small>
+      </article>
+      <article class="news-item">
+        <img src="imgs/7.jpg" alt="Beam becomes Mixer">
+        <a href="#"><h4>Microsoft's Beam becomes Mixer, gets a facelift</h4></a>
+        <small><a href="#">Rachel Kaser</a> - 17 hours ago</small>
+      </article>
+      <article class="news-item">
+        <img src="imgs/8.jpg" alt="Become a certified cybersecurity expert">
+        <a href="#"><h4>Get all you need to become a certified cybersecurity expert for only &dollar;69</h4></a>
+        <small><a href="#">TNW Deals</a> - 17 hours ago</small>
+      </article>
     </section>
 
-    <section class="funding">
-      <h1>Latest funding rounds on Index.co </h1>
+    <section class="container">
+      <a href="#"><h3>TNW Conference &gt;</h3></a>
+      <article class="news-item">
+        <img src="imgs/9.jpg" alt="Hack battle">
+        <a href="#"><h4>Best of the hack battle: 10 finalists from TNW Conference 2017</h4></a>
+        <small><a href="#">Lauren Gilmore</a> - 2 days ago</small>
+      </article>
+      <article class="news-item">
+        <img src="imgs/10.jpg" alt="Tumblr">
+        <a href="#"><h4>How Tumblr reconciles political activism with business</h4></a>
+        <small><a href="#">Matthew Hughes</a> - 6 days ago</small>
+      </article>
+      <article class="news-item">
+        <img src="imgs/11.jpg" alt="Building a killer product">
+        <a href="#"><h4>Where to start when building a killer product</h4></a>
+        <small><a href="#">Abhimanyu Ghoshal</a> - 6 days ago</small>
+      </article>
+      <article class="news-item">
+        <img src="imgs/12.jpg" alt="Useless emoji">
+        <a href="#"><h4>Here's why there are so many 'useless' emoji</h4></a>
+        <small><a href="#">Napier Lopez</a> - 6 days ago</small>
+      </article>
+    </section>
+
+    <section class="container">
+      <a href="#"><h3>Latest funding rounds on Index.co &gt;</h3></a>
       <article>NooBaa Storage</article>
       <article>NooBaa Storage</article>
       <article>NooBaa Storage</article>
@@ -125,13 +180,13 @@
       </div>
       <section>
         <div class="footer-links">
-          <h2>Upcoming events</h2>
+          <h4>Upcoming events</h4>
         </div>
         <div class="footer-links">
-          <h2>Popular companies</h2>
+          <h4>Popular companies</h4>
         </div>
         <div class="footer-links">
-          <h2>Trending topics</h2>
+          <h4>Trending topics</h4>
         </div>
         <div class="social">
           <p>Social Links</p>

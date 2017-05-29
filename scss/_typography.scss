@@ -17,10 +17,41 @@ h2{
   font-family: 'Ropa Sans', sans-serif;
   text-transform: uppercase;
 }
+h3{
+  color: $color-link-alt;
+  font-weight: bold;
+  font-size: 24px;
+  font-family: Helvetica, Arial, sans-serif;
+  padding: 10px;
+  &:hover{
+    color: $color-link;
+  }
+}
 h4{
-  font-family: 'Ropa Sans', sans-serif;
+  color: $color-link;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1.2;
+  font-family: Helvetica, Arial, sans-serif;
+  &:hover{
+    color: $color-link-alt;
+    text-decoration: underline;
+  }
+  @include mQ(1024px){
+    font-size: 14px;
+  }
 }
 
 a{
   text-decoration: none;
+  color: inherit;
+}
+
+small{
+  color: #999;
+  font-size: 12px;
+  font-weight: bold;
+  @include mQ(1024px){
+    letter-spacing: -0.8px;
+  }
 }

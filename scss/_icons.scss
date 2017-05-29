@@ -1,6 +1,6 @@
 .icon{
   background-color: transparent;
-  background-image: url(imgs/icons-sprite.svg);
+  background-image: url('/imgs/icons-sprite.svg');
   background-size: 1248px 1248px;
   background-repeat: no-repeat;
   display: inline-block;
@@ -30,6 +30,17 @@
 }
 
 .icon-search{
+  @extend .icon;
+  background-position: -5px -5px;
+}
+
+.icon-time{
+  @extend .icon;
+  background-position: -160px -160px;
+  transform: scale(.875,.875);
+}
+
+.icon-share{
   @extend .icon;
   background-position: -5px -5px;
 }
