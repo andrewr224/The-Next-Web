@@ -11,36 +11,52 @@
 
 .icon-fb{
   @extend .icon;
-  background-position: -15px -15px;
+  background-position: -240px -240px;
+  &:hover{
+    background-position: -256px -256px;
+  }
 }
 
 .icon-tweet{
   @extend .icon;
-  background-position: -5px -5px;
+  background-position: -944px -944px;
+  &:hover{
+    background-position: -960px -960px;
+  }
 }
 
 .icon-mail{
   @extend .icon;
-  background-position: -5px -5px;
+  background-position: -497px -497px;
+  &:hover{
+    background-position: -513px -513px;
+  }
 }
 
 .icon-more{
   @extend .icon;
-  background-position: -5px -5px;
+  background-position: -544px -544px;
+  &:hover{
+    background-position: -560px -560px;
+  }
 }
 
 .icon-search{
   @extend .icon;
-  background-position: -5px -5px;
+  background-position: -784px -784px;
+  &:hover{
+    background-position: -800px -800px;
+  }
 }
 
 .icon-time{
   @extend .icon;
-  background-position: -160px -160px;
+  background-position: -128px -128px;
   transform: scale(.875,.875);
 }
 
 .icon-share{
   @extend .icon;
-  background-position: -5px -5px;
+  background-position: -832px -832px;
+  transform: scale(.875,.875);
 }

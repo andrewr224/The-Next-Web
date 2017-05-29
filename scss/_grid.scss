@@ -9,6 +9,7 @@
   padding: 10px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 30px;
 }
 
 .featured-main{
@@ -44,6 +45,15 @@
   @include mQ(768px){
     width: 100%;
     float: none;
+  }
+}
+
+.fund-item{
+  @extend .news-item;
+  @include mQ(1024px){
+    &:last-child{
+      display: none;
+    }
   }
 }
 

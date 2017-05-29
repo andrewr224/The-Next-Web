@@ -69,7 +69,8 @@ table {
   max-width: 1200px;
   padding: 10px;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  margin-bottom: 30px; }
 
 .featured-main {
   float: left;
@@ -87,7 +88,7 @@ table {
       width: 100%;
       float: none; } }
 
-.news-item {
+.news-item, .fund-item {
   float: left;
   width: 25%;
   min-height: 235px;
@@ -96,13 +97,17 @@ table {
   padding-left: 10px;
   padding-right: 10px; }
   @media screen and (max-width: 1024px) {
-    .news-item {
+    .news-item, .fund-item {
       width: 33.33%;
       height: 200px; } }
   @media screen and (max-width: 768px) {
-    .news-item {
+    .news-item, .fund-item {
       width: 100%;
       float: none; } }
+
+@media screen and (max-width: 1024px) {
+  .fund-item:last-child {
+    display: none; } }
 
 .categorie-item {
   float: left;
@@ -116,7 +121,7 @@ table {
       float: none; } }
 
 body {
-  font-family: 'Quicksand', Helvetica, Arial, sans-serif; }
+  font-family: "Quicksand", Helvetica, Arial, sans-serif; }
 
 h1 {
   color: white;
@@ -126,7 +131,7 @@ h1 {
 
 h2 {
   color: white;
-  font-family: 'Ropa Sans', sans-serif;
+  font-family: "Ropa Sans", sans-serif;
   text-transform: uppercase; }
 
 h3 {
@@ -151,6 +156,12 @@ h4 {
     h4 {
       font-size: 14px; } }
 
+h5 {
+  font-family: Helvetica, Arial, sans-serif;
+  color: white;
+  font-weight: bold;
+  font-size: 18px; }
+
 a {
   text-decoration: none;
   color: inherit; }
@@ -174,37 +185,41 @@ small {
   vertical-align: middle; }
 
 .icon-fb {
-  background-position: -15px -15px; }
+  background-position: -240px -240px; }
+  .icon-fb:hover {
+    background-position: -256px -256px; }
 
 .icon-tweet {
-  background-position: -5px -5px; }
+  background-position: -944px -944px; }
+  .icon-tweet:hover {
+    background-position: -960px -960px; }
 
 .icon-mail {
-  background-position: -5px -5px; }
+  background-position: -497px -497px; }
+  .icon-mail:hover {
+    background-position: -513px -513px; }
 
 .icon-more {
-  background-position: -5px -5px; }
+  background-position: -544px -544px; }
+  .icon-more:hover {
+    background-position: -560px -560px; }
 
 .icon-search {
-  background-position: -5px -5px; }
+  background-position: -784px -784px; }
+  .icon-search:hover {
+    background-position: -800px -800px; }
 
 .icon-time {
-  background-position: -160px -160px;
+  background-position: -128px -128px;
   -webkit-transform: scale(0.875, 0.875);
   -ms-transform: scale(0.875, 0.875);
   transform: scale(0.875, 0.875); }
 
 .icon-share {
-  background-position: -5px -5px; }
-
-#smartphone {
-  display: block;
-  width: 100%;
-  height: 120px;
-  background: url(/imgs/1.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center; }
+  background-position: -832px -832px;
+  -webkit-transform: scale(0.875, 0.875);
+  -ms-transform: scale(0.875, 0.875);
+  transform: scale(0.875, 0.875); }
 
 .top-bar {
   background: white;
@@ -213,7 +228,7 @@ small {
   top: 0;
   left: 0;
   right: 0;
-  height: 50px;
+  height: 48px;
   box-shadow: 0 0 20px rgba(170, 167, 167, 0.6); }
   .top-bar::before, .top-bar::after {
     content: "";
@@ -225,17 +240,24 @@ small {
     /* For IE 6/7 (trigger hasLayout) */ }
   .top-bar h2 {
     color: #999999;
-    line-height: 50px;
+    line-height: 48px;
     font-size: 18px; }
   .top-bar ul {
     margin-left: 20px; }
   .top-bar li {
-    float: right; }
+    float: right;
+    line-height: 48px; }
+  .top-bar i {
+    margin: 11px 8px 11px 8px; }
+  .top-bar li:nth-child(2) {
+    border-left: 1px solid #cccccc;
+    padding-left: 8px;
+    padding-right: 8px; }
   .top-bar li:first-child {
     float: left; }
 
 nav {
-  margin-top: 50px;
+  margin-top: 48px;
   background: black;
   height: 30px;
   width: 100%;
@@ -322,15 +344,32 @@ nav {
 .top-news a:hover {
   color: white; }
 
-.news-item img {
-  width: 100%;
-  margin-bottom: 10px; }
+.news-item, .fund-item {
+  margin-top: 15px; }
+  .news-item img, .fund-item img {
+    width: 100%;
+    margin-bottom: 10px; }
+  .news-item small, .fund-item small {
+    font-weight: normal; }
+  .news-item a:hover, .fund-item a:hover {
+    color: #454545; }
 
-.news-item small {
-  font-weight: normal; }
-
-.news-item a:hover {
-  color: #454545; }
+.fund {
+  position: relative; }
+  .fund .fund-links {
+    position: absolute;
+    top: 25px;
+    right: 0;
+    color: #ff4422; }
+    .fund .fund-links a {
+      margin-left: 5px;
+      margin-right: 5px; }
+      .fund .fund-links a:hover {
+        color: black; }
+  .fund .fund-item h5 {
+    background-color: #ff4422;
+    padding-left: 80px;
+    line-height: 40px; }
 
 footer .quote {
   text-align: center;

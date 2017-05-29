@@ -2,26 +2,26 @@
 @import url('https://fonts.googleapis.com/css?family=Ropa+Sans');
 
 body{
-  font-family: 'Quicksand', Helvetica, Arial, sans-serif;
+  font-family: $font-main;
 }
 
 h1{
   color: white;
   font-size: 28px;
   font-weight: bold;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: $font-alt;
 }
 
 h2{
   color: white;
-  font-family: 'Ropa Sans', sans-serif;
+  font-family: $font-minor;
   text-transform: uppercase;
 }
 h3{
   color: $color-link-alt;
   font-weight: bold;
   font-size: 24px;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: $font-alt;
   padding: 10px;
   &:hover{
     color: $color-link;
@@ -32,7 +32,7 @@ h4{
   font-weight: bold;
   font-size: 18px;
   line-height: 1.2;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: $font-alt;
   &:hover{
     color: $color-link-alt;
     text-decoration: underline;
@@ -40,6 +40,13 @@ h4{
   @include mQ(1024px){
     font-size: 14px;
   }
+}
+
+h5{
+  font-family: $font-alt;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
 }
 
 a{
