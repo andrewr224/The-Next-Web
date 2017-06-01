@@ -4,6 +4,7 @@
 @import "grid";
 @import "typography";
 @import "icons";
+@import "cat";
 
 // Navigation section
 
@@ -83,7 +84,7 @@ nav{
     height: 500px;
     padding: 7px;
     .article-1{
-      background-image: url(/imgs/europe.png);
+      background-image: $gradient-alt, url(/imgs/europe.png);
       height: 490px;
     }
     span{
@@ -114,10 +115,10 @@ nav{
       margin-bottom: 7px;
     }
     .article-2{
-      background-image: url(/imgs/robot.jpg);
+      background-image: $gradient, url(/imgs/robot.jpg);
     }
     .article-3{
-      background-image: url(/imgs/HackerDDos.jpg);
+      background-image: $gradient, url(/imgs/HackerDDos.jpg);
     }
     h1{
       @include mQ(1024px){
@@ -134,6 +135,14 @@ nav{
     display: inline-block;
     position: absolute;
     bottom: 0;
+  }
+  .logo{
+    display: block;
+    width: 425px;
+    height: auto;
+    position: absolute;
+    top: 20px;
+    left: 20px;
   }
   small{
     display: inline-block;
@@ -233,32 +242,77 @@ nav{
   }
 }
 
+// Deals
 
+.deals{
+  small{
+    text-decoration: line-through;
+
+  }
+  span{
+    font-size: 15px;
+    color: #333;
+  }
+  h4{
+    font-size: 16px;
+  }
+  article{
+    min-height: 280px;
+  }
+}
 
 // Footer
 footer{
-  .quote{
-    text-align: center;
-    height: 200px;
-    background: rgb(230, 182, 162);
-    @include mQ(1024px){
-      display: none;
-    }
+  background: #131313;
+  color: white;
+  a:hover{
+    color: white;
   }
-  section{
-
-    div{
-      float: left;
-    }
+  h2{
+    color: #999;
+    font-size: 18px;
+    margin-bottom: 15px;
   }
-  .footer-links{
-    width: 33.33%;
-    min-width: 210px;
+  li{
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  .date{
+    color: rgb(85,85,85);
+    font-size: 14px;
+    margin-left: 5px;
   }
   .social{
     text-align: center;
     width: 100%;
-    margin-top: 40px;
+    margin-top: 90px;
+    ul{
+      margin-bottom: 15px;
+    }
+    li{
+      display: inline-block;
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+    h2{
+      font-size: inherit;
+    }
+    .social-icons{
+      a{
+        display: inline-block;
+        background-color: #333;
+        border: 2px solid #333;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        &:hover{
+          background: none;
+        }
+      }
+      i{
+        margin-bottom: -20px;
+      }
+    }
   }
   .copy{
     text-align: center;

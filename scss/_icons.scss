@@ -70,3 +70,37 @@
   @extend .icon;
   background-position:  -48px -48px;
 }
+
+.icon-fb-alt{
+  @extend .icon;
+  background-position: -272px -272px;
+}
+
+.icon-tweet-alt{
+  @extend .icon;
+  background-position: -976px -976px;
+}
+
+.icon-youtube{
+  @extend .icon;
+  background-position: -1232px -1232px;
+}
+
+.icon-insta{
+  @extend .icon;
+  background-position: -368px -368px;
+}
+.icon-pin{
+  @extend .icon;
+  background-position: -624px -624px;
+}
+
+.icon-feed{
+  @extend .icon;
+  background-position: -768px -768px;
+}
+
+.icon-mail-alt{
+  @extend .icon;
+  background-position: -528px -528px;
+}
