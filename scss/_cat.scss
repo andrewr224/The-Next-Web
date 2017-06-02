@@ -12,9 +12,9 @@
       color: $color-link-alt;
     }
     a{
-      color: #777;
+      color: #444;
       &:hover{
-        color: #222;
+        color: black;
       }
     }
   }
@@ -33,6 +33,9 @@
   background-size: cover;
   @include mQ(1024px){
     height: 33vw;
+  }
+  @include mQ(768px){
+    height: 70vw;
   }
   h1{
     font-size: 19px;

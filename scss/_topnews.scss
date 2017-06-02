@@ -8,6 +8,10 @@
         background-image: $gradient, url(/imgs/europe.png);
         height: 369px;
       }
+      @include mQ(768px){
+        margin-top: 48px;
+        height: 200px;
+      }
     }
     span{
       display: block;
@@ -25,11 +29,19 @@
       @include mQ(1024px){
         font-size: 34px;
       }
+      @include mQ(768px){
+        font-size: 20px;
+        margin-bottom: 0;
+      }
     }
   }
   .featured-articles{
     padding: 7px;
     padding-left: 0;
+    @include mQ(768px){
+      padding-left: 7px;
+      padding-top: 0;
+    }
     article{
       height: 241.5px;
       margin-bottom: 7px;

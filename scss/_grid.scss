@@ -1,6 +1,7 @@
 .container-wide{
   @include clearfix;
   width: 100%;
+  min-width: 300px;
 }
 
 .container{
@@ -45,6 +46,7 @@
   @include mQ(768px){
     width: 100%;
     float: none;
+    min-height: 74px;
   }
 }
 
@@ -78,4 +80,7 @@
   min-width: 210px;
   padding-top: 30px;
   padding-left: 10px;
+  @include mQ(768px){
+    width: 50%;
+  }
 }

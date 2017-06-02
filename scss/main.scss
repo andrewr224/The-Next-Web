@@ -7,6 +7,7 @@
 @import "topnews";
 @import "cat";
 @import "animation";
+@import "articles";
 
 // Navigation section
 
@@ -24,6 +25,9 @@
     color: $color-main;
     line-height: 48px;
     font-size: 16px;
+    @include mQ(768px){
+      display: none;
+    }
   }
   ul{
     margin-left: 20px;
@@ -31,15 +35,42 @@
   li{
     float: right;
     line-height: 48px;
-
+    @include mQ(768px){
+      display: none;
+    }
   }
   i{
-    margin: 11px 8px 11px 8px;
+    margin: 11px 8px;
   }
   li:nth-child(2){
-    border-left: 1px solid rgb(204, 204, 204);
+    border-left: 1px solid rgb(236, 236, 236);
+    padding-left: 15px;
+    padding-right: 15px;
+    display: none;
+    a{
+      display: block;
+      padding-top: 14px;
+      height: 48px;
+      line-height: 48px;
+    }
+    span{
+      display: block;
+      background-color: $color-link-alt;
+      width: 20px;
+      height: 2px;
+      margin-top: 4px;
+    }
+    @include mQ(768px){
+      display: block;
+    }
+  }
+  li:nth-child(3){
+    border-left: 1px solid rgb(236, 236, 236);
     padding-left: 8px;
     padding-right: 8px;
+    @include mQ(768px){
+      display: block;
+    }
   }
   li:first-child{
     float: left;
@@ -73,26 +104,11 @@ nav{
     }
   }
   @include mQ(768px){
-    position: fixed;
-    width: 105px;
-    z-index: 999;
+    display: none;
   }
 }
 
-// Articles
-
-.news-item{
-  img{
-    width: 100%;
-    margin-bottom: 10px;
-  }
-  small{
-    font-weight: normal;
-  }
-  a:hover{
-    color: rgb(69, 69, 69);
-  }
-}
+// Funding section
 
 .fund{
   position: relative;
@@ -104,6 +120,16 @@ nav{
     @include mQ(1024px){
       position: static;
       margin: 5px;
+    }
+    @include mQ(768px){
+      span{
+        display: none;
+      }
+      a{
+        display: block;
+        font-size: 14px;
+        margin-bottom: 15px;
+      }
     }
     a{
       margin-left: 5px;
@@ -171,9 +197,33 @@ nav{
 // Deals
 
 .deals{
+  position: relative;
   font-size: 16px;
+  img{
+    width: 100%;
+    margin-bottom: 10px;
+    height: auto;
+    @include mQ(768px){
+      width: 72px;
+      height: 72px;
+      float: left;
+      margin-right: 15px;
+    }
+  }
+  h3{
+    width: 180px;
+  }
   @include mQ(1024px){
     font-size: 14px;
+  }
+  .deals-link{
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    color: $color-link-alt;
+    &:hover{
+      color: $color-link;
+    }
   }
   small{
     text-decoration: line-through;
@@ -186,7 +236,9 @@ nav{
     margin-bottom: 0;
     @include mQ(1024px){
       height: 300px;
-
+    }
+    @include mQ(768px){
+      height: 74px;
     }
   }
 }
@@ -223,6 +275,9 @@ footer{
       display: inline-block;
       margin-left: 5px;
       margin-right: 5px;
+      @include mQ(768px){
+        margin: 0;
+      }
     }
     h2{
       font-size: inherit;
@@ -252,6 +307,14 @@ footer{
     font-size: 13px;
     background: black;
     padding-bottom: 50px;
+    @include mQ(768px){
+      height: 122px;
+      line-height: 16px;
+      padding-top: 30px;
+      span{
+        display: block;
+      }
+    }
     img{
       height: 9px;
     }

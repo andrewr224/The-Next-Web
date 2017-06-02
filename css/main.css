@@ -56,7 +56,8 @@ table {
   box-sizing: border-box; }
 
 .container-wide, .container {
-  width: 100%; }
+  width: 100%;
+  min-width: 300px; }
   .container-wide::before, .container::before, .container-wide::after, .container::after {
     content: "";
     display: table; }
@@ -104,7 +105,8 @@ table {
   @media screen and (max-width: 768px) {
     .news-item, .fund-item {
       width: 100%;
-      float: none; } }
+      float: none;
+      min-height: 74px; } }
 
 @media screen and (max-width: 1024px) {
   .fund-item:last-child {
@@ -130,6 +132,9 @@ table {
   min-width: 210px;
   padding-top: 30px;
   padding-left: 10px; }
+  @media screen and (max-width: 768px) {
+    .footer-links {
+      width: 50%; } }
 
 body {
   font-family: "Quicksand", Helvetica, Arial, sans-serif; }
@@ -277,6 +282,10 @@ small {
         background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.9) 0%, transparent 100%), url(/imgs/europe.png);
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, transparent 100%), url(/imgs/europe.png);
         height: 369px; } }
+    @media screen and (max-width: 768px) {
+      .top-news .featured-main .article-1 {
+        margin-top: 48px;
+        height: 200px; } }
   .top-news .featured-main span {
     display: block;
     width: 100%;
@@ -292,10 +301,18 @@ small {
     @media screen and (max-width: 1024px) {
       .top-news .featured-main h1 {
         font-size: 34px; } }
+    @media screen and (max-width: 768px) {
+      .top-news .featured-main h1 {
+        font-size: 20px;
+        margin-bottom: 0; } }
 
 .top-news .featured-articles {
   padding: 7px;
   padding-left: 0; }
+  @media screen and (max-width: 768px) {
+    .top-news .featured-articles {
+      padding-left: 7px;
+      padding-top: 0; } }
   .top-news .featured-articles article {
     height: 241.5px;
     margin-bottom: 7px; }
@@ -354,9 +371,9 @@ small {
     content: "• ";
     color: #ff4422; }
   .categories li a {
-    color: #777; }
+    color: #444; }
     .categories li a:hover {
-      color: #222; }
+      color: black; }
 
 .cat-content {
   padding-left: 10px;
@@ -371,6 +388,9 @@ small {
   @media screen and (max-width: 1024px) {
     .cat-head {
       height: 33vw; } }
+  @media screen and (max-width: 768px) {
+    .cat-head {
+      height: 70vw; } }
   .cat-head h1 {
     font-size: 19px;
     line-height: 26px; }
@@ -482,6 +502,102 @@ small {
 .dropdown:hover .dropdown-content {
   display: block; }
 
+.nav-alt {
+  position: fixed;
+  z-index: 999;
+  display: none;
+  width: 105px; }
+  .nav-alt a {
+    background: black;
+    display: block;
+    width: 105px;
+    line-height: 31px;
+    color: #999;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center; }
+    .nav-alt a:hover {
+      color: white; }
+  .nav-alt ul {
+    display: none;
+    position: fixed;
+    top: 79px;
+    left: 0; }
+  .nav-alt .menu-img {
+    height: 48px; }
+  @media screen and (max-width: 768px) {
+    .nav-alt {
+      display: block; } }
+  .nav-alt:hover ul {
+    display: block; }
+  .nav-alt:hover .menu-btn {
+    display: none; }
+
+.news-item small, .fund-item small {
+  font-weight: normal; }
+
+.news-item a:hover, .fund-item a:hover {
+  color: #454545; }
+
+@media screen and (max-width: 768px) {
+  .news-item h4, .fund-item h4 {
+    margin-bottom: 5px; } }
+
+.image, .image-1, .image-2, .image-3, .image-4, .image-5, .image-6, .image-7, .image-8, .image-9, .image-10, .image-11, .image-12 {
+  display: block;
+  max-height: 398px;
+  height: 11vw;
+  background-size: cover;
+  margin-bottom: 10px; }
+  @media screen and (max-width: 1024px) {
+    .image, .image-1, .image-2, .image-3, .image-4, .image-5, .image-6, .image-7, .image-8, .image-9, .image-10, .image-11, .image-12 {
+      height: 22vh; } }
+  @media screen and (max-width: 768px) {
+    .image, .image-1, .image-2, .image-3, .image-4, .image-5, .image-6, .image-7, .image-8, .image-9, .image-10, .image-11, .image-12 {
+      width: 72px;
+      height: 72px;
+      float: left;
+      margin-right: 15px; } }
+
+.image-1 {
+  background-image: url(/imgs/1.jpg); }
+
+.image-2 {
+  background-image: url(/imgs/2.jpg); }
+
+.image-3 {
+  background-image: url(/imgs/3.jpg); }
+
+.image-4 {
+  background-image: url(/imgs/4.jpg); }
+
+.image-5 {
+  background-image: url(/imgs/5.jpg); }
+
+.image-6 {
+  background-image: url(/imgs/6.jpg); }
+
+.image-7 {
+  background-image: url(/imgs/7.jpg); }
+
+.image-8 {
+  background-image: url(/imgs/8.jpg); }
+
+.image-9 {
+  background-image: url(/imgs/9.jpg); }
+
+.image-10 {
+  background-image: url(/imgs/10.jpg); }
+
+.image-11 {
+  background-image: url(/imgs/11.jpg); }
+
+.image-12 {
+  background-image: url(/imgs/12.jpg); }
+
+.image-1 {
+  background-image: url(/imgs/1.jpg); }
+
 .top-bar {
   background: white;
   position: fixed;
@@ -504,17 +620,45 @@ small {
     color: #999999;
     line-height: 48px;
     font-size: 16px; }
+    @media screen and (max-width: 768px) {
+      .top-bar h2 {
+        display: none; } }
   .top-bar ul {
     margin-left: 20px; }
   .top-bar li {
     float: right;
     line-height: 48px; }
+    @media screen and (max-width: 768px) {
+      .top-bar li {
+        display: none; } }
   .top-bar i {
-    margin: 11px 8px 11px 8px; }
+    margin: 11px 8px; }
   .top-bar li:nth-child(2) {
-    border-left: 1px solid #cccccc;
+    border-left: 1px solid #ececec;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: none; }
+    .top-bar li:nth-child(2) a {
+      display: block;
+      padding-top: 14px;
+      height: 48px;
+      line-height: 48px; }
+    .top-bar li:nth-child(2) span {
+      display: block;
+      background-color: #ff4422;
+      width: 20px;
+      height: 2px;
+      margin-top: 4px; }
+    @media screen and (max-width: 768px) {
+      .top-bar li:nth-child(2) {
+        display: block; } }
+  .top-bar li:nth-child(3) {
+    border-left: 1px solid #ececec;
     padding-left: 8px;
     padding-right: 8px; }
+    @media screen and (max-width: 768px) {
+      .top-bar li:nth-child(3) {
+        display: block; } }
   .top-bar li:first-child {
     float: left; }
 
@@ -548,19 +692,7 @@ nav {
       color: white; }
   @media screen and (max-width: 768px) {
     nav {
-      position: fixed;
-      width: 105px;
-      z-index: 999; } }
-
-.news-item img, .fund-item img {
-  width: 100%;
-  margin-bottom: 10px; }
-
-.news-item small, .fund-item small {
-  font-weight: normal; }
-
-.news-item a:hover, .fund-item a:hover {
-  color: #454545; }
+      display: none; } }
 
 .fund {
   position: relative; }
@@ -573,6 +705,13 @@ nav {
       .fund .fund-links {
         position: static;
         margin: 5px; } }
+    @media screen and (max-width: 768px) {
+      .fund .fund-links span {
+        display: none; }
+      .fund .fund-links a {
+        display: block;
+        font-size: 14px;
+        margin-bottom: 15px; } }
     .fund .fund-links a {
       margin-left: 5px;
       margin-right: 5px; }
@@ -624,10 +763,30 @@ nav {
     border-top: 1px solid #ffb0a2; }
 
 .deals {
+  position: relative;
   font-size: 16px; }
+  .deals img {
+    width: 100%;
+    margin-bottom: 10px;
+    height: auto; }
+    @media screen and (max-width: 768px) {
+      .deals img {
+        width: 72px;
+        height: 72px;
+        float: left;
+        margin-right: 15px; } }
+  .deals h3 {
+    width: 180px; }
   @media screen and (max-width: 1024px) {
     .deals {
       font-size: 14px; } }
+  .deals .deals-link {
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    color: #ff4422; }
+    .deals .deals-link:hover {
+      color: black; }
   .deals small {
     text-decoration: line-through; }
   .deals span {
@@ -638,6 +797,9 @@ nav {
     @media screen and (max-width: 1024px) {
       .deals article {
         height: 300px; } }
+    @media screen and (max-width: 768px) {
+      .deals article {
+        height: 74px; } }
 
 footer {
   background: #131313;
@@ -665,6 +827,9 @@ footer {
       display: inline-block;
       margin-left: 5px;
       margin-right: 5px; }
+      @media screen and (max-width: 768px) {
+        footer .social li {
+          margin: 0; } }
     footer .social h2 {
       font-size: inherit; }
     footer .social .social-icons a {
@@ -686,6 +851,13 @@ footer {
     font-size: 13px;
     background: black;
     padding-bottom: 50px; }
+    @media screen and (max-width: 768px) {
+      footer .copy {
+        height: 122px;
+        line-height: 16px;
+        padding-top: 30px; }
+        footer .copy span {
+          display: block; } }
     footer .copy img {
       height: 9px; }
     footer .copy .heart {
