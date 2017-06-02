@@ -101,7 +101,7 @@ table {
   @media screen and (max-width: 1024px) {
     .news-item, .fund-item {
       width: 33.33%;
-      min-height: 225px; } }
+      min-height: 220px; } }
   @media screen and (max-width: 768px) {
     .news-item, .fund-item {
       width: 100%;
