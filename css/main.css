@@ -73,6 +73,9 @@ table {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px; }
+  @media screen and (max-width: 768px) {
+    .container {
+      margin-bottom: 0; } }
 
 .featured-main {
   float: left;
