@@ -127,7 +127,8 @@ table {
   @media screen and (max-width: 768px) {
     .categorie-item {
       width: 100%;
-      float: none; } }
+      float: none;
+      min-height: auto; } }
 
 .footer-links {
   float: left;
