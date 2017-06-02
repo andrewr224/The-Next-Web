@@ -41,7 +41,7 @@
   padding-right: 10px;
   @include mQ(1024px){
     width: 33.33%;
-    min-height: 220px;
+    min-height: 225px;
   }
   @include mQ(768px){
     width: 100%;
