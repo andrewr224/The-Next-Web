@@ -93,14 +93,14 @@ table {
   float: left;
   width: 25%;
   min-height: 235px;
-  margin-top: 10px;
+  margin-top: 15px;
   margin-bottom: 10px;
   padding-left: 10px;
   padding-right: 10px; }
   @media screen and (max-width: 1024px) {
     .news-item, .fund-item {
       width: 33.33%;
-      height: 200px; } }
+      min-height: 220px; } }
   @media screen and (max-width: 768px) {
     .news-item, .fund-item {
       width: 100%;
@@ -112,10 +112,13 @@ table {
 
 .categorie-item {
   float: left;
-  width: 33.33%; }
+  width: 33.33%;
+  min-height: 715px;
+  margin-bottom: 20px; }
   @media screen and (max-width: 1024px) {
     .categorie-item {
-      width: 50%; } }
+      width: 50%;
+      min-height: 700px; } }
   @media screen and (max-width: 768px) {
     .categorie-item {
       width: 100%;
@@ -125,7 +128,8 @@ table {
   float: left;
   width: 33.33%;
   min-width: 210px;
-  padding-top: 30px; }
+  padding-top: 30px;
+  padding-left: 10px; }
 
 body {
   font-family: "Quicksand", Helvetica, Arial, sans-serif; }
@@ -259,6 +263,85 @@ small {
 .icon-mail-alt {
   background-position: -528px -528px; }
 
+.top-news .featured-main {
+  padding: 7px; }
+  .top-news .featured-main .article-1 {
+    background-image: -webkit-linear-gradient(290deg, rgba(225, 0, 84, 0.9) 0%, transparent 50%), -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.9) 0%, transparent 100%), url(/imgs/europe.png);
+    background-image: -o-linear-gradient(290deg, rgba(225, 0, 84, 0.9) 0%, transparent 50%), -o-linear-gradient(bottom, rgba(0, 0, 0, 0.9) 0%, transparent 100%), url(/imgs/europe.png);
+    background-image: linear-gradient(160deg, rgba(225, 0, 84, 0.9) 0%, transparent 50%), linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, transparent 100%), url(/imgs/europe.png);
+    height: 490px; }
+    @media screen and (max-width: 1024px) {
+      .top-news .featured-main .article-1 {
+        background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.9)), to(transparent)), url(/imgs/europe.png);
+        background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.9) 0%, transparent 100%), url(/imgs/europe.png);
+        background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.9) 0%, transparent 100%), url(/imgs/europe.png);
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, transparent 100%), url(/imgs/europe.png);
+        height: 369px; } }
+  .top-news .featured-main span {
+    display: block;
+    width: 100%;
+    text-align: right;
+    color: white;
+    font-size: 13px; }
+    @media screen and (max-width: 1024px) {
+      .top-news .featured-main span {
+        display: none; } }
+  .top-news .featured-main h1 {
+    font-size: 44px;
+    margin-bottom: 10px; }
+    @media screen and (max-width: 1024px) {
+      .top-news .featured-main h1 {
+        font-size: 34px; } }
+
+.top-news .featured-articles {
+  padding: 7px;
+  padding-left: 0; }
+  .top-news .featured-articles article {
+    height: 241.5px;
+    margin-bottom: 7px; }
+    @media screen and (max-width: 1024px) {
+      .top-news .featured-articles article {
+        height: 181px; } }
+  .top-news .featured-articles .article-2 {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.9)), to(transparent)), url(/imgs/robot.jpg);
+    background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.9) 0%, transparent 100%), url(/imgs/robot.jpg);
+    background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.9) 0%, transparent 100%), url(/imgs/robot.jpg);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, transparent 100%), url(/imgs/robot.jpg); }
+  .top-news .featured-articles .article-3 {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.9)), to(transparent)), url(/imgs/HackerDDos.jpg);
+    background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.9) 0%, transparent 100%), url(/imgs/HackerDDos.jpg);
+    background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.9) 0%, transparent 100%), url(/imgs/HackerDDos.jpg);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, transparent 100%), url(/imgs/HackerDDos.jpg); }
+  @media screen and (max-width: 1024px) {
+    .top-news .featured-articles h1 {
+      font-size: 20px; } }
+
+.top-news article {
+  background-size: cover;
+  position: relative;
+  padding: 15px; }
+
+.top-news .article-content {
+  position: absolute;
+  bottom: 0; }
+
+.top-news .logo {
+  width: 425px;
+  position: absolute;
+  top: 20px;
+  left: 20px; }
+  @media screen and (max-width: 1024px) {
+    .top-news .logo {
+      display: none; } }
+
+.top-news small {
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 15px; }
+
+.top-news a:hover {
+  color: white; }
+
 .categories li {
   font-size: 13px;
   line-height: 1.5;
@@ -275,10 +358,6 @@ small {
     .categories li a:hover {
       color: #222; }
 
-.categorie-item {
-  min-height: 715px;
-  margin-bottom: 20px; }
-
 .cat-content {
   padding-left: 10px;
   padding-right: 10px; }
@@ -289,6 +368,9 @@ small {
   height: 23vw;
   background: no-repeat center center;
   background-size: cover; }
+  @media screen and (max-width: 1024px) {
+    .cat-head {
+      height: 33vw; } }
   .cat-head h1 {
     font-size: 19px;
     line-height: 26px; }
@@ -376,6 +458,30 @@ small {
   background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.9) 0%, transparent 100%), url(/imgs/c9.jpg);
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, transparent 100%), url(/imgs/c9.jpg); }
 
+.drop-btn h2:hover {
+  color: #333; }
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  background-color: #fff;
+  width: 150px; }
+  .dropdown-content a {
+    display: block;
+    color: #999;
+    font-family: "Ropa Sans", sans-serif;
+    text-transform: uppercase;
+    line-height: 30px;
+    border-top: 1px solid #dadada;
+    padding-left: 20px; }
+    .dropdown-content a:hover {
+      color: #333; }
+
+.dropdown:hover .dropdown-content {
+  display: block; }
+
 .top-bar {
   background: white;
   position: fixed;
@@ -397,7 +503,7 @@ small {
   .top-bar h2 {
     color: #999999;
     line-height: 48px;
-    font-size: 18px; }
+    font-size: 16px; }
   .top-bar ul {
     margin-left: 20px; }
   .top-bar li {
@@ -446,85 +552,15 @@ nav {
       width: 105px;
       z-index: 999; } }
 
-.top-news .featured-main {
-  height: 500px;
-  padding: 7px; }
-  .top-news .featured-main .article-1 {
-    background-image: -webkit-linear-gradient(290deg, rgba(225, 0, 84, 0.9) 0%, transparent 60%, rgba(0, 0, 0, 0.9) 90%), url(/imgs/europe.png);
-    background-image: -o-linear-gradient(290deg, rgba(225, 0, 84, 0.9) 0%, transparent 60%, rgba(0, 0, 0, 0.9) 90%), url(/imgs/europe.png);
-    background-image: linear-gradient(160deg, rgba(225, 0, 84, 0.9) 0%, transparent 60%, rgba(0, 0, 0, 0.9) 90%), url(/imgs/europe.png);
-    height: 490px; }
-  .top-news .featured-main span {
-    display: block;
-    width: 100%;
-    text-align: right;
-    color: white;
-    font-size: 13px; }
-    @media screen and (max-width: 1024px) {
-      .top-news .featured-main span {
-        display: none; } }
-  .top-news .featured-main h1 {
-    font-size: 44px;
-    margin-bottom: 10px; }
-    @media screen and (max-width: 1024px) {
-      .top-news .featured-main h1 {
-        font-size: 34px; } }
+.news-item img, .fund-item img {
+  width: 100%;
+  margin-bottom: 10px; }
 
-.top-news .featured-articles {
-  padding: 7px;
-  padding-left: 0; }
-  .top-news .featured-articles article {
-    height: 241.5px;
-    margin-bottom: 7px; }
-  .top-news .featured-articles .article-2 {
-    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.9)), to(transparent)), url(/imgs/robot.jpg);
-    background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.9) 0%, transparent 100%), url(/imgs/robot.jpg);
-    background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.9) 0%, transparent 100%), url(/imgs/robot.jpg);
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, transparent 100%), url(/imgs/robot.jpg); }
-  .top-news .featured-articles .article-3 {
-    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.9)), to(transparent)), url(/imgs/HackerDDos.jpg);
-    background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.9) 0%, transparent 100%), url(/imgs/HackerDDos.jpg);
-    background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.9) 0%, transparent 100%), url(/imgs/HackerDDos.jpg);
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, transparent 100%), url(/imgs/HackerDDos.jpg); }
-  @media screen and (max-width: 1024px) {
-    .top-news .featured-articles h1 {
-      font-size: 20px; } }
+.news-item small, .fund-item small {
+  font-weight: normal; }
 
-.top-news article {
-  background-size: cover;
-  position: relative;
-  padding: 15px; }
-
-.top-news .article-content {
-  display: inline-block;
-  position: absolute;
-  bottom: 0; }
-
-.top-news .logo {
-  display: block;
-  width: 425px;
-  height: auto;
-  position: absolute;
-  top: 20px;
-  left: 20px; }
-
-.top-news small {
-  display: inline-block;
-  margin-top: 10px;
-  margin-bottom: 15px; }
-
-.top-news a:hover {
-  color: white; }
-
-.news-item, .fund-item {
-  margin-top: 15px; }
-  .news-item img, .fund-item img {
-    width: 100%;
-    margin-bottom: 10px; }
-  .news-item small, .fund-item small {
-    font-weight: normal; }
-  .news-item a:hover, .fund-item a:hover {
-    color: #454545; }
+.news-item a:hover, .fund-item a:hover {
+  color: #454545; }
 
 .fund {
   position: relative; }
@@ -533,6 +569,10 @@ nav {
     top: 25px;
     right: 0;
     color: #ff4422; }
+    @media screen and (max-width: 1024px) {
+      .fund .fund-links {
+        position: static;
+        margin: 5px; } }
     .fund .fund-links a {
       margin-left: 5px;
       margin-right: 5px; }
@@ -583,18 +623,21 @@ nav {
     background-color: #fff9f8;
     border-top: 1px solid #ffb0a2; }
 
-.deals small {
-  text-decoration: line-through; }
-
-.deals span {
-  font-size: 15px;
-  color: #333; }
-
-.deals h4 {
+.deals {
   font-size: 16px; }
-
-.deals article {
-  min-height: 280px; }
+  @media screen and (max-width: 1024px) {
+    .deals {
+      font-size: 14px; } }
+  .deals small {
+    text-decoration: line-through; }
+  .deals span {
+    color: #333; }
+  .deals article {
+    height: 280px;
+    margin-bottom: 0; }
+    @media screen and (max-width: 1024px) {
+      .deals article {
+        height: 300px; } }
 
 footer {
   background: #131313;

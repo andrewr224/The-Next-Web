@@ -20,11 +20,6 @@
   }
 }
 
-.categorie-item{
-  min-height: 715px;
-  margin-bottom: 20px;
-}
-
 .cat-content{
   padding-left: 10px;
   padding-right: 10px;
@@ -36,6 +31,9 @@
   height: 23vw;
   background: no-repeat center center;
   background-size: cover;
+  @include mQ(1024px){
+    height: 33vw;
+  }
   h1{
     font-size: 19px;
     line-height: 26px;

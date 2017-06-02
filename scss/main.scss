@@ -4,7 +4,9 @@
 @import "grid";
 @import "typography";
 @import "icons";
+@import "topnews";
 @import "cat";
+@import "animation";
 
 // Navigation section
 
@@ -21,7 +23,7 @@
   h2{
     color: $color-main;
     line-height: 48px;
-    font-size: 18px;
+    font-size: 16px;
   }
   ul{
     margin-left: 20px;
@@ -77,87 +79,9 @@ nav{
   }
 }
 
-// Main section
-
-.top-news{
-  .featured-main{
-    height: 500px;
-    padding: 7px;
-    .article-1{
-      background-image: $gradient-alt, url(/imgs/europe.png);
-      height: 490px;
-    }
-    span{
-      display: block;
-      width: 100%;
-      text-align: right;
-      color: white;
-      font-size: 13px;
-      @include mQ(1024px){
-        display: none;
-      }
-    }
-    h1{
-      font-size: 44px;
-      margin-bottom: 10px;
-      @include mQ(1024px){
-        font-size: 34px;
-      }
-    }
-    @include mQ(1024px){
-    }
-  }
-  .featured-articles{
-    padding: 7px;
-    padding-left: 0;
-    article{
-      height: 241.5px;
-      margin-bottom: 7px;
-    }
-    .article-2{
-      background-image: $gradient, url(/imgs/robot.jpg);
-    }
-    .article-3{
-      background-image: $gradient, url(/imgs/HackerDDos.jpg);
-    }
-    h1{
-      @include mQ(1024px){
-        font-size: 20px;
-      }
-    }
-  }
-  article{
-    background-size: cover;
-    position:relative;
-    padding: 15px;
-  }
-  .article-content{
-    display: inline-block;
-    position: absolute;
-    bottom: 0;
-  }
-  .logo{
-    display: block;
-    width: 425px;
-    height: auto;
-    position: absolute;
-    top: 20px;
-    left: 20px;
-  }
-  small{
-    display: inline-block;
-    margin-top: 10px;
-    margin-bottom: 15px;
-  }
-  a:hover{
-    color: white;
-  }
-
-}
-
 // Articles
+
 .news-item{
-  margin-top: 15px;
   img{
     width: 100%;
     margin-bottom: 10px;
@@ -172,13 +96,15 @@ nav{
 
 .fund{
   position: relative;
-  h3{
-  }
   .fund-links{
     position: absolute;
     top: 25px;
     right: 0;
     color: $color-link-alt;
+    @include mQ(1024px){
+      position: static;
+      margin: 5px;
+    }
     a{
       margin-left: 5px;
       margin-right: 5px;
@@ -245,19 +171,23 @@ nav{
 // Deals
 
 .deals{
+  font-size: 16px;
+  @include mQ(1024px){
+    font-size: 14px;
+  }
   small{
     text-decoration: line-through;
-
   }
   span{
-    font-size: 15px;
     color: #333;
   }
-  h4{
-    font-size: 16px;
-  }
   article{
-    min-height: 280px;
+    height: 280px;
+    margin-bottom: 0;
+    @include mQ(1024px){
+      height: 300px;
+
+    }
   }
 }
 

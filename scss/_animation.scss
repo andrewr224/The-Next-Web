@@ -1,0 +1,31 @@
+
+.drop-btn{
+  h2:hover{
+    color: #333;
+  }
+}
+
+.dropdown-content{
+  display: none;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  background-color: #fff;
+  width: 150px;
+  a{
+    display: block;
+    color: #999;
+    font-family: $font-minor;
+    text-transform: uppercase;
+    line-height: 30px;
+    border-top: 1px solid #dadada;
+    padding-left: 20px;
+    &:hover{
+      color: #333;
+    }
+  }
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
