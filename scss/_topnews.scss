@@ -2,10 +2,10 @@
   .featured-main{
     padding: 7px;
     .article-1{
-      background-image: $gradient-alt, $gradient, url(/imgs/europe.png);
+      background-image: $gradient-alt, $gradient, url(../imgs/europe.png);
       height: 490px;
       @include mQ(1024px){
-        background-image: $gradient, url(/imgs/europe.png);
+        background-image: $gradient, url(../imgs/europe.png);
         height: 369px;
       }
       @include mQ(768px){
@@ -50,10 +50,10 @@
       }
     }
     .article-2{
-      background-image: $gradient, url(/imgs/robot.jpg);
+      background-image: $gradient, url(../imgs/robot.jpg);
     }
     .article-3{
-      background-image: $gradient, url(/imgs/HackerDDos.jpg);
+      background-image: $gradient, url(../imgs/HackerDDos.jpg);
     }
     h1{
       @include mQ(1024px){
